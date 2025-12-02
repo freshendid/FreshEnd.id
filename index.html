@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshEnd - Cleaning Service</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1 class="logo">FreshEnd</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="section home">
+        <div class="home-text">
+            <h2>After Party?<br><span>FreshEnd It.</span></h2>
+            <p>Kami hadir untuk membersihkan semua sisa pesta — cepat, rapi, dan tanpa ribet.</p>
+        </div>
+
+        <div class="home-image">
+            <img src="c:\Users\Chaotic\Downloads\cleaning-service.webp" alt="Cleaning Team">
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>
+            FreshEnd adalah layanan post-party cleaning profesional yang membantu kamu menikmati acara tanpa perlu memikirkan kekacauan setelahnya. Kami hadir untuk mengembalikan ruanganmu menjadi rapi, segar, dan nyaman—secepat dan seefisien mungkin.
+            Dengan tim yang terlatih, proses kerja yang terstruktur, dan peralatan pembersih berkualitas. FreshEnd memastikan rumah, venue, atau ruang kerja kembali fresh dalam waktu singkat.
+Misi kami: memberi pengalaman bebas stres setelah acara, besar maupun kecil.
+Kamu fokus bersenang-senang—sisanya biar kami yang bereskan.
+        </p>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+
+        <div class="services-container">
+
+            <div class="service-box">
+                <h3>Basic Cleaning</h3>
+                <p>Pembersihan ringan setelah acara kecil. Cocok untuk mengembalikan ruangan ke kondisi rapi & nyaman.</p>
+                <button onclick="showDetail('basic')">Details</button>
+            </div>
+
+            <div class="service-box">
+                <h3>Deep Cleaning</h3>
+                <p>Pembersihan menyeluruh untuk hasil yang lebih detail, maksimal, dan higienis.</p>
+                <button onclick="showDetail('deep')">Details</button>
+            </div>
+
+            <div class="service-box">
+                <h3>Emergency Cleaning</h3>
+                <p>Layanan cepat untuk kondisi mendadak yang membutuhkan pembersihan segera.</p>
+                <button onclick="showDetail('emergency')">Details</button>
+            </div>
+
+            <div class="service-box">
+                <h3>Fresh Aroma Treatment</h3>
+                <p>Treatment pengharum ruangan untuk suasana yang lebih segar dan nyaman.</p>
+                <button onclick="showDetail('aroma')">Details</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <p>Email: <b>freshend.id@gmail.com</b></p>
+        <p>Instagram: <b>@freshend.id</b></p>
+    </section>
+
+    <!-- MODAL -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeDetail()">&times;</span>
+            <h2 id="detailTitle"></h2>
+            <p id="detailText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
